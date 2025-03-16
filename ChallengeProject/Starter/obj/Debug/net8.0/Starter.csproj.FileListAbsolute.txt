@@ -12,3 +12,4 @@ C:\Users\danie\OneDrive\Desktop\Challenge-project-branching-looping-CSharp-main\
 C:\Users\danie\OneDrive\Desktop\Challenge-project-branching-looping-CSharp-main\ChallengeProject\Starter\obj\Debug\net8.0\Starter.pdb
 C:\Users\danie\OneDrive\Desktop\Challenge-project-branching-looping-CSharp-main\ChallengeProject\Starter\obj\Debug\net8.0\Starter.genruntimeconfig.cache
 C:\Users\danie\OneDrive\Desktop\Challenge-project-branching-looping-CSharp-main\ChallengeProject\Starter\obj\Debug\net8.0\ref\Starter.dll
+C:\Users\danie\OneDrive\Desktop\Challenge-project-branching-looping-CSharp-main\ChallengeProject\Starter\obj\Debug\net8.0\Starter.sourcelink.json

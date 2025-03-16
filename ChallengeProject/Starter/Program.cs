@@ -342,12 +342,57 @@ do
     break;
 
 
-        case "4":
-            // Ensure animal nicknames and personality descriptions are complete
-            Console.WriteLine("Challenge Project - please check back soon to see progress.");
-            Console.WriteLine("Press the Enter key to continue.");
-            readResult = Console.ReadLine();
-            break;
+      case "4":
+    // Ensure animal nickname and personality descriptions are complete
+    
+    for (int i = 0; i < maxPets; i++)
+    {
+        if (ourAnimals[i, 3] == "Nickname: " && ourAnimals[i, 0] != "ID #: ")
+        {
+            validEntry = false;
+            while (validEntry == false)
+            {
+                Console.WriteLine($"Enter a nickname for {ourAnimals[i, 0]}");
+                readResult = Console.ReadLine();
+                
+                if (readResult != null && readResult.Trim().Length > 0)
+                {
+                    animalNickname = readResult.Trim();
+                    validEntry = true;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid entry. Please enter a nickname.");
+                }
+            }
+            ourAnimals[i, 3] = "Nickname: " + animalNickname;
+        }
+
+        if (ourAnimals[i, 5] == "Personality: " && ourAnimals[i, 0] != "ID #: ")
+        {
+            validEntry = false;
+            while (validEntry == false)
+            {
+                Console.WriteLine($"Enter a personality description for {ourAnimals[i, 0]} (likes or dislikes, tricks, energy level)");
+                readResult = Console.ReadLine();
+                
+                if (readResult != null && readResult.Trim().Length > 0)
+                {
+                    animalPersonalityDescription = readResult.Trim();
+                    validEntry = true;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid entry. Please enter a personality description.");
+                }
+            }
+            ourAnimals[i, 5] = "Personality: " + animalPersonalityDescription;
+        }
+    }
+    Console.WriteLine("\nAll nickname and personality description fields are now complete. \nPress Enter to continue.");
+    Console.ReadLine();
+    break;
+
 
         case "5":
             // Edit an animal’s age");
