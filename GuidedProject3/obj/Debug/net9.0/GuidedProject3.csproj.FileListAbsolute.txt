@@ -12,3 +12,4 @@ C:\Users\danie\OneDrive\Desktop\GuidedProject3\GuidedProject3\obj\Debug\net9.0\r
 C:\Users\danie\OneDrive\Desktop\GuidedProject3\GuidedProject3\obj\Debug\net9.0\GuidedProject3.pdb
 C:\Users\danie\OneDrive\Desktop\GuidedProject3\GuidedProject3\obj\Debug\net9.0\GuidedProject3.genruntimeconfig.cache
 C:\Users\danie\OneDrive\Desktop\GuidedProject3\GuidedProject3\obj\Debug\net9.0\ref\GuidedProject3.dll
+C:\Users\danie\OneDrive\Desktop\GuidedProject3\GuidedProject3\obj\Debug\net9.0\GuidedProject3.sourcelink.json
