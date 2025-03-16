@@ -12,3 +12,4 @@ C:\Users\danie\OneDrive\Desktop\Challenge-project-Create-methods-in-CSharp-main\
 C:\Users\danie\OneDrive\Desktop\Challenge-project-Create-methods-in-CSharp-main\Starter\obj\Debug\net6.0\Starter.pdb
 C:\Users\danie\OneDrive\Desktop\Challenge-project-Create-methods-in-CSharp-main\Starter\obj\Debug\net6.0\Starter.genruntimeconfig.cache
 C:\Users\danie\OneDrive\Desktop\Challenge-project-Create-methods-in-CSharp-main\Starter\obj\Debug\net6.0\ref\Starter.dll
+C:\Users\danie\OneDrive\Desktop\Challenge-project-Create-methods-in-CSharp-main\Starter\obj\Debug\net6.0\Starter.sourcelink.json
