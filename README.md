@@ -6,28 +6,19 @@ Starter and Solution code for the **Guided project**: "Work with variable data i
 ![image](https://github.com/user-attachments/assets/13e366bb-26f5-438e-8444-4d7dd59b1b0d)
 
 
-Features Implemented
+# Pet Adoption App Enhancements  
 
-Search Functionality: Allows users to search pet descriptions for specific characteristics.
+## Overview  
+I improved the Contoso Pets app by adding search functionality, enhancing output readability, and including suggested donation amounts.  
 
-Enhanced Readability: Reformatted output for better clarity.
+## Key Updates  
+- **Search Feature**: Find pets by characteristic keywords.  
+- **Better Readability**: Clearer, formatted output.  
+- **Suggested Donations**: Displayed in local currency.  
 
-Suggested Donations: Displays recommended donation amounts in local currency.
+## Case 3 & Case 4  
+- **Case 3**: Ensures pets have age and physical descriptions.  
+- **Case 4**: Ensures pets have nicknames and personality details.  
 
-Skills Practiced
+These updates make pet adoption smoother and more user-friendly!  
 
-Iterating through data to gather user input.
-
-Processing and formatting data for display.
-
-Using two-dimensional arrays for storing pet details.
-
-Searching and updating array data.
-
-Formatting complex strings and handling regional currency formats.
-
-Case 3 & Case 4
-
-Case 3: Ensures all pets have complete age and physical descriptions.
-
-Case 4: Ensures all pets have nicknames and personality descriptions.
