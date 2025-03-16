@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using System.Threading;
 
-// ourAnimals array will store the following: 
+// Declaring variables to store pet information
 string animalSpecies = "";
 string animalID = "";
 string animalAge = "";
@@ -11,21 +11,22 @@ string animalPersonalityDescription = "";
 string animalNickname = "";
 string suggestedDonation = "";
 
-// variables that support data entry
+// Setting a maximum limit for pets
 int maxPets = 8;
 string? readResult;
 string menuSelection = "";
 decimal decimalDonation = 0.00m;
 
-// array used to store runtime data
+// Initializing a two-dimensional array to store pet details
 string[,] ourAnimals = new string[maxPets, 7];
 
-// sample data ourAnimals array entries
+// Populating the array with sample data
 for (int i = 0; i < maxPets; i++)
 {
     switch (i)
     {
         case 0:
+            // Assigning values for a specific pet
             animalSpecies = "dog";
             animalID = "d1";
             animalAge = "2";
@@ -56,6 +57,7 @@ for (int i = 0; i < maxPets; i++)
             break;
 
         case 3:
+            // Partial data for a cat
             animalSpecies = "cat";
             animalID = "c4";
             animalAge = "";
@@ -66,6 +68,7 @@ for (int i = 0; i < maxPets; i++)
             break;
 
         default:
+            // Empty values for uninitialized entries
             animalSpecies = "";
             animalID = "";
             animalAge = "";
@@ -76,6 +79,7 @@ for (int i = 0; i < maxPets; i++)
             break;
     }
 
+    // Storing pet details in the array
     ourAnimals[i, 0] = "ID #: " + animalID;
     ourAnimals[i, 1] = "Species: " + animalSpecies;
     ourAnimals[i, 2] = "Age: " + animalAge;
@@ -83,18 +87,18 @@ for (int i = 0; i < maxPets; i++)
     ourAnimals[i, 4] = "Physical description: " + animalPhysicalDescription;
     ourAnimals[i, 5] = "Personality: " + animalPersonalityDescription;
     
+    // Ensuring the suggested donation is a valid decimal, else defaulting to 45.00
     if (!decimal.TryParse(suggestedDonation, out decimalDonation))
     {
-        decimalDonation = 45.00m; // if suggestedDonation NOT a number, default to 45.00
+        decimalDonation = 45.00m;
     }
     ourAnimals[i, 6] = $"Suggested Donation: {decimalDonation:C2}";
 }
 
-// top-level menu options
+// Main menu loop
 do
 {
     Console.Clear();
-
     Console.WriteLine("Welcome to the Contoso PetFriends app. Your main menu options are:");
     Console.WriteLine(" 1. List all of our current pet information");
     Console.WriteLine(" 2. Display all dogs with a specified characteristic");
@@ -110,6 +114,7 @@ do
     switch (menuSelection)
     {
         case "1":
+            // Listing all pets stored in the array
             for (int i = 0; i < maxPets; i++)
             {
                 if (ourAnimals[i, 0] != "ID #: ")
@@ -126,16 +131,19 @@ do
             break;
 
         case "2":
+            // Searching for dogs with specific characteristics
             Console.WriteLine("\nEnter dog characteristics to search for, separated by commas:");
             readResult = Console.ReadLine();
             if (string.IsNullOrWhiteSpace(readResult)) break;
             
+            // Cleaning and sorting search terms
             string[] dogSearchTerms = readResult.ToLower().Split(',').Select(term => term.Trim()).Where(term => term != "").ToArray();
             Array.Sort(dogSearchTerms);
 
-            string[] searchingIcons = { "|", "/", "--", "\\", "*" };
+            string[] searchingIcons = { "|", "/", "-", "\\", "*" };
             bool matchesAnyDog = false;
 
+            // Iterating through stored pet data to find matches
             for (int i = 0; i < maxPets; i++)
             {
                 if (!ourAnimals[i, 1].Contains("dog")) continue;
@@ -145,13 +153,18 @@ do
 
                 foreach (string term in dogSearchTerms)
                 {
-                    foreach (string icon in searchingIcons)
+                    // Simulating a searching animation
+                    for (int countdown = 2; countdown >= 0; countdown--)
                     {
-                        Console.Write($"\rSearching our dog {ourAnimals[i, 3]} for {term} {icon}");
-                        Thread.Sleep(100);
+                        foreach (string icon in searchingIcons)
+                        {
+                            Console.Write($"\rSearching our dog {ourAnimals[i, 3]} for {term} {icon} / {countdown}");
+                            Thread.Sleep(100);
+                        }
                     }
                     Console.Write("\r" + new string(' ', Console.BufferWidth));
                     
+                    // Checking if description matches search term
                     if (dogDescription.Contains(term))
                     {
                         Console.WriteLine($"\rOur dog {ourAnimals[i, 3]} matches your search for {term}!");
