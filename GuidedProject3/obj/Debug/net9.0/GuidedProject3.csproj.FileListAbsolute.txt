@@ -1,0 +1,14 @@
+C:\Users\danie\OneDrive\Desktop\GuidedProject3\GuidedProject3\bin\Debug\net9.0\GuidedProject3.exe
+C:\Users\danie\OneDrive\Desktop\GuidedProject3\GuidedProject3\bin\Debug\net9.0\GuidedProject3.deps.json
+C:\Users\danie\OneDrive\Desktop\GuidedProject3\GuidedProject3\bin\Debug\net9.0\GuidedProject3.runtimeconfig.json
+C:\Users\danie\OneDrive\Desktop\GuidedProject3\GuidedProject3\bin\Debug\net9.0\GuidedProject3.dll
+C:\Users\danie\OneDrive\Desktop\GuidedProject3\GuidedProject3\bin\Debug\net9.0\GuidedProject3.pdb
+C:\Users\danie\OneDrive\Desktop\GuidedProject3\GuidedProject3\obj\Debug\net9.0\GuidedProject3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danie\OneDrive\Desktop\GuidedProject3\GuidedProject3\obj\Debug\net9.0\GuidedProject3.AssemblyInfoInputs.cache
+C:\Users\danie\OneDrive\Desktop\GuidedProject3\GuidedProject3\obj\Debug\net9.0\GuidedProject3.AssemblyInfo.cs
+C:\Users\danie\OneDrive\Desktop\GuidedProject3\GuidedProject3\obj\Debug\net9.0\GuidedProject3.csproj.CoreCompileInputs.cache
+C:\Users\danie\OneDrive\Desktop\GuidedProject3\GuidedProject3\obj\Debug\net9.0\GuidedProject3.dll
+C:\Users\danie\OneDrive\Desktop\GuidedProject3\GuidedProject3\obj\Debug\net9.0\refint\GuidedProject3.dll
+C:\Users\danie\OneDrive\Desktop\GuidedProject3\GuidedProject3\obj\Debug\net9.0\GuidedProject3.pdb
+C:\Users\danie\OneDrive\Desktop\GuidedProject3\GuidedProject3\obj\Debug\net9.0\GuidedProject3.genruntimeconfig.cache
+C:\Users\danie\OneDrive\Desktop\GuidedProject3\GuidedProject3\obj\Debug\net9.0\ref\GuidedProject3.dll
