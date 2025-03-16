@@ -127,11 +127,31 @@ do
             break;
     
         case "2":
-            // Display all dogs with a specified characteristic
-            Console.WriteLine("\nUNDER CONSTRUCTION - please check back next month to see progress.");
-            Console.WriteLine("Press the Enter key to continue.");
-            readResult = Console.ReadLine();
-            break;
+    // Display all dogs with a specified characteristic
+    string dogCharacteristic = "";
+
+    while (dogCharacteristic == "")
+    {
+        // have the user enter physical characteristics to search for
+        Console.WriteLine($"\nEnter one desired dog characteristics to search for");
+        readResult = Console.ReadLine();
+        if (readResult != null)
+        {
+            dogCharacteristic = readResult.ToLower().Trim();
+        }
+    } 
+
+    // #6 loop through the ourAnimals array to search for matching animals
+for (int i = 0; i < maxPets; i++)
+{
+    if (ourAnimals[i, 1].Contains("dog"))
+    {
+        // #7 Search combined descriptions and report results
+    }
+}
+    Console.WriteLine("Press the Enter key to continue.");
+    readResult = Console.ReadLine();
+    break;
 
         default:
             break;

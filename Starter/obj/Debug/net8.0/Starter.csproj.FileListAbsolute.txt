@@ -12,3 +12,4 @@ C:\Users\danie\OneDrive\Desktop\Guided-project-Work-with-variable-data-in-CSharp
 C:\Users\danie\OneDrive\Desktop\Guided-project-Work-with-variable-data-in-CSharp-main\Starter\obj\Debug\net8.0\Starter.pdb
 C:\Users\danie\OneDrive\Desktop\Guided-project-Work-with-variable-data-in-CSharp-main\Starter\obj\Debug\net8.0\Starter.genruntimeconfig.cache
 C:\Users\danie\OneDrive\Desktop\Guided-project-Work-with-variable-data-in-CSharp-main\Starter\obj\Debug\net8.0\ref\Starter.dll
+C:\Users\danie\OneDrive\Desktop\Guided-project-Work-with-variable-data-in-CSharp-main\Starter\obj\Debug\net8.0\Starter.sourcelink.json
