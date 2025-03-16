@@ -1,12 +1,5 @@
 ﻿using System;
 
-string[] pettingZoo = 
-{
-    "alpacas", "capybaras", "chickens", "ducks", "emus", "geese", 
-    "goats", "iguanas", "kangaroos", "lemurs", "llamas", "macaws", 
-    "ostriches", "pigs", "ponies", "rabbits", "sheep", "tortoises",
-};
-
 /*- There will be three visiting schools
     - School A has six visiting groups (the default number)
     - School B has three visiting groups
@@ -18,9 +11,15 @@ string[] pettingZoo =
     - Print the school name
     - Print the animal groups*/
 
+string[] pettingZoo = 
+{
+    "alpacas", "capybaras", "chickens", "ducks", "emus", "geese", 
+    "goats", "iguanas", "kangaroos", "lemurs", "llamas", "macaws", 
+    "ostriches", "pigs", "ponies", "rabbits", "sheep", "tortoises",
+};
 
-// RandomizeAnimals();
-// string[,] group = AssignGroup();
+RandomizeAnimals();
+string[,] group = AssignGroup();
 Console.WriteLine("School A");
 // PrintGroup(group);
 
@@ -38,7 +37,18 @@ void RandomizeAnimals()
     }
 }
 
-foreach(string animal in pettingZoo) 
+string[,] AssignGroup(int groups = 6) 
 {
-    Console.WriteLine(animal);
+    string[,] result = new string[groups, pettingZoo.Length/groups];
+    int start = 0;
+
+    for (int i = 0; i < groups; i++) 
+    {
+        for (int j = 0; j < result.GetLength(1); j++) 
+        {
+            result[i,j] = pettingZoo[start++];
+        }
+    }
+
+    return result;
 }
